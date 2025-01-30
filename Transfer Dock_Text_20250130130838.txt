@@ -1,0 +1,116 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Study Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#materials">Study Materials</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Student Study Hub</h2>
+        <p>Your one-stop place for study materials and news updates.</p>
+    </section>
+
+    <section id="materials">
+        <h2>Study Materials</h2>
+        <p>Coming soon...</p>
+    </section>
+
+    <section id="news">
+        <h2>Latest News</h2>
+        <p>Stay updated with important student-related news.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Student Study Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html><style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    background: #0073e6;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}</style><script>document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you for contacting us! We'll get back to you soon.");
+});</script>
